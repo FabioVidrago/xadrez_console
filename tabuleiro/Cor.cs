@@ -7,6 +7,7 @@
         Amarelo,
         Vermelha,
         Verde,
-        Laranja
+        Laranja,
+        Azul
     }
 }
