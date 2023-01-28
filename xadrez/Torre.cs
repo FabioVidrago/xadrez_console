@@ -23,7 +23,7 @@ namespace xadrez
         {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
-            Posicao pos = new Posicao(0, 0);
+            Posicao pos = new Posicao(0,0);
 
             //acima 
             pos.defenirValores(posicao.linha - 1, posicao.coluna);
@@ -61,9 +61,9 @@ namespace xadrez
                     break;
                 }
                 pos.linha = pos.coluna + 1;
-            }
+            } 
 
-            //esquerda
+            // esquerda
             pos.defenirValores(posicao.linha, posicao.coluna - 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
@@ -72,10 +72,10 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.linha = pos.coluna - 1;
+                pos.coluna = pos.coluna - 1;
             }
 
-
+            
             return mat;
         }
     }
