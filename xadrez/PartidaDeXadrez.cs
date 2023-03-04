@@ -74,6 +74,11 @@ namespace xadrez
             turno++;
             mudaJogador();
         }
+
+        public bool testeXequeMate(Cor)
+        {
+            if()
+        }
         public void validarPosicaoOrigem(Posicao pos)
         {
             if (tab.peca(pos) == null)
